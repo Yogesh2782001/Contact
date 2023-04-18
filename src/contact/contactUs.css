@@ -1,6 +1,12 @@
 .container{
     margin-left: 5vw;
     margin-right: 5vw;
+    --bg-color: #ffffff;
+  --primary-color: #ffffff;
+  --secondary-color: #000;
+  --text-color: #000;
+  --text-color-2: #000;
+  --overlay-color: rgb(255 255 255 / 70%);
 }
 .ctn-1-hding{
     display: grid;
