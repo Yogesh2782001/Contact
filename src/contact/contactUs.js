@@ -1,22 +1,23 @@
 import React from "react"; 
-import { Container, Row, Col } from "react-bootstrap";
+import "./contactUs.css"
+// import { div, Row, div } from "react-bootstrap";
 import { contactConfig } from "../content_option"
-
 export default function ContactUs() {
   
 
   return (
-      <Container>
-     
-        <Row className="mb-5 mt-3">
-          <Col lg="8">
-            <h1 className="display-4 mb-4">Contact Me</h1>
-            <hr className="t_border my-4 ml-0 text-left" />
-          </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lg="5" className="mb-5">
-            <h3 className="color_sec py-4">Get in touch</h3>
+      <div className="container">
+        
+        <div className="ctn-hed">
+          <div lg="8">
+            <h1 className=" ">Contact Us</h1>
+            <hr className=" " />
+          </div>
+        </div>
+
+        <div className="ctn-1-hding">
+          <div lg="5" className="">
+            <h3 className="ctn-hn-3 ">Get in touch</h3>
             <address>
               <strong>Email:</strong>{" "}
               <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
@@ -33,11 +34,11 @@ export default function ContactUs() {
               )}
             </address>
             <p>{contactConfig.description}</p>
-          </Col>
-          <Col lg="7" className="d-flex align-items-center">
-            <form  className="contact__form w-100">
-              <Row>
-                <Col lg="6" className="form-group">
+          </div>
+          <div lg="7" className="">
+            <form  className="contact__form ">
+              <div className="ctn-1-hding-1">
+                <div lg="6" className="form-group">
                   <input
                     className="form-control"
                     id="name"
@@ -46,8 +47,8 @@ export default function ContactUs() {
                     type="text"
                     required 
                   />
-                </Col>
-                <Col lg="6" className="form-group">
+                </div>
+                <div lg="6" className="form-group">
                   <input
                     className="form-control rounded-0"
                     id="email"
@@ -56,27 +57,27 @@ export default function ContactUs() {
                     type="email" 
                     required 
                   />
-                </Col>
-              </Row>
+                </div>
+              </div>
               <textarea
                 className="form-control rounded-0"
                 id="message"
                 name="message"
                 placeholder="Message"
-                rows="5" 
+                divs="5" 
                 required
               ></textarea>
               <br />
-              <Row>
-                <Col lg="12" className="form-group">
-                  <button className="btn ac_btn" type="submit"> 
+              <div>
+                <div lg="12" className="">
+                  <button className="btn" type="submit"> 
                   Send
                   </button>
-                </Col>
-              </Row>
+                </div>
+              </div>
             </form>
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
   );
 }

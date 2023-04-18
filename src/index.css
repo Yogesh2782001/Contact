@@ -104,10 +104,6 @@ code {
   border: 1px solid var(--secondary-color);
 }
 
-.contact__form input.form-control {
-  margin-bottom: 2em;
-  height: calc(2.5em + .75rem + 2px);
-}
 
 .loading-bar {
   position: fixed;
@@ -137,5 +133,7 @@ code {
   }
 }
 .btn{
-  color: #fff;
+  color: #000;
+  width: 30vw;
+  height:5vh ;
 }
